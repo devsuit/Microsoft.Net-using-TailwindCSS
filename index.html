@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/dist/main.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>
-        Build. Test. Deploy.
-    </h1>
-    <p>.NET is the free, open-source, cross-platform framework for building modern apps and powerful cloud services.</p>
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="">
+      <div class="nav bg-blue-200 ">
+        <!-- <div class="items">Microsoft</div> -->
+        <img class="w-32 bg-center" src="assets/mslogo.png" alt="">
+        <ul class="hidden md:flex  space-x-4 py-2">
+        <li class="items">.NET</li>
+        <li class="items">Why .NET</li>
+        <li class="items">Features</li>
+        <li class="items">Learn</li>
+        <li class="items">Docs</li>
+        <li class="items">Downloads</li>
+        <li class="items">Community</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="home-hero m-8 p-8 grid grid-cols-2">
+        <div class="">
+            <h1 class="text-7xl font-medium text-violet-900">Build. Test. Deploy.</h1>
+            <p class="m-4 font-mono">
+                .NET is the free, open-source, cross-platform framework for building
+                modern apps and powerful cloud services.
+            </p>
+            <button class=" mx-2 bg-violet-700 p-3 border rounded-md text-white">Downloads</button>
+            <button class="mx-2 p-3 rounded-md border border-violet-700 text-violet-700" >Get Started</button>
+            <p class="font-light">Supported on Windows, Linux, and macOS</p>
+
+        </div>
+      <div class="">
+        <img src="assets/home-hero.png" alt="">
+      </div>
+   
+    </div>
+  </body>
 </html>
