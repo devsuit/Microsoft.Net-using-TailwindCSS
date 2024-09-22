@@ -10,8 +10,9 @@
     <div class="">
       <div class="nav bg-blue-200">
         <!-- <div class="items">Microsoft</div> -->
-        <img class="w-32 bg-center" src="assets/mslogo.png" alt="" />
+        
         <ul class="hidden md:flex space-x-4 py-2">
+          <img class="w-32 mx-4" src="assets/mslogo.png" alt="" />
           <li class="items">.NET</li>
           <li class="items">Why .NET</li>
           <li class="items">Features</li>
@@ -19,16 +20,17 @@
           <li class="items">Docs</li>
           <li class="items">Downloads</li>
           <li class="items">Community</li>
+          <li class="items border border-black p-1 rounded-md ">Live TV</li>
         </ul>
       </div>
     </div>
 
-    <div class="home-hero p-8 grid grid-cols-2">
-      <div class="">
+    <div class="home-hero grid sm:grid-cols-1 md:grid-cols-2">
+      <div class="p-8">
         <h1 class="text-7xl font-medium text-violet-900">
           Build. Test. Deploy.
         </h1>
-        <p class="m-4 font-mono">
+        <p class="py-4 font-normal text-xl">
           .NET is the free, open-source, cross-platform framework for building
           modern apps and powerful cloud services.
         </p>
@@ -43,14 +45,14 @@
         <p class="font-light">Supported on Windows, Linux, and macOS</p>
       </div>
       <div class="">
-        <img src="assets/home-hero.png" alt="" />
+        <img class="md:max-w-2xl" src="assets/home-hero.png" alt="" />
       </div>
     </div>
-    <div class="text-center font-semibold">
+    <div class="text-center font-semibold text-2xl">
       <h1>Build it with .NET Build it with .NET</h1>
     </div>
 
-    <div class="services grid grid-cols-4">
+    <div class="services grid sm: grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
       <div class="web border-2 rounded-xl p-4 m-4 border-violet-400">
         <h1 class="text-violet-500">Web</h1>
 
@@ -75,44 +77,52 @@
         containers.
       </div>
     </div>
-    <div class="container">
-      <ul class="flex space-x-4">
-        <li>Artificial Intelligence & ML</li>
-        <li>Game development</li>
-        <li>Internet of Things</li>
-        <li>Mobile</li>
-        <li>Desktop</li>
-        <li>Front-end web</li>
-        <li>Back-end APIs</li>
-        <li>Data</li>
+    <div class="lg:ml-8 lg:my-8">
+      <ul
+        class="text-center grid sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-8 space-x-2 text-blue-700 underline"
+      >
+        <li class="p-2">Game development</li>
+        <li class="p-2">Artificial Intelligence & ML</li>
+        <li class="p-2">Internet of Things</li>
+        <li class="p-2">Mobile</li>
+        <li class="p-2">Desktop</li>
+        <li class="p-2">Front-end web</li>
+        <li class="p-2">Back-end APIs</li>
+        <li class="p-2">Data</li>
       </ul>
     </div>
 
-    <div class="responses grid grid-cols-2 m-8">
+    <div class="responses grid sm:grid-cols-1 md:grid-cols-2 m-8">
       <div class="">
-        <h1 class="font-bold text-4xl mb-4">
+        <h1 class="font-bold text-4xl">
           Faster response times, less compute power, better applications
         </h1>
-        The Fortunes test simulates a simple web application where HTML is
-        rendered server-side after querying a database. See TechEmpower's Round
-        22 results.
+        <h1 class="mt-8 mb-8 text-justify font-medium">
+          The Fortunes test simulates a simple web application where HTML is
+          rendered server-side after querying a database. See TechEmpower's
+          Round 22 results.
+        </h1>
       </div>
-      <div class="">
+      <div class="mb-4">
         <h1 class="text-center font-medium mb-4">
           Fortunes responses per second
         </h1>
         <img src="assets/fortunes-graphic.png" alt="" />
       </div>
     </div>
-    <div class="dotNet9 grid grid-cols-2 mx-16">
-      <h1>
+    <div class="dotNet9 grid sm:grid-cols-1 md:grid-cols-2 mx-16">
+      <h1 class="mb-8 md:mt-24 text-lg font-medium text-justify">
         What's next in .NET 9? .NET 9 elevates cloud-native and intelligent app
         development, and more. Preview the next major version of .NET today.
       </h1>
-      <img class="mx-16 w-96" src="assets/dotnet9.jfif" alt="" />
+      <img
+        class="sm:w-48 mx-16 md:w-[512px]"
+        src="assets/dotnet9.jfif"
+        alt=""
+      />
     </div>
 
-    <div class="platform grid grid-cols-2 m-8 p-4">
+    <div class="platform grid sm:grid-cols-1 md:grid-cols-2 m-8 p-4">
       <div class="opensource">
         <img class="w-36 h-36" src="assets/globe.png" alt="" />
         <h1 class="font-bold">Free and open source</h1>
@@ -132,24 +142,24 @@
       </div>
     </div>
 
-    <div class="learning grid grid-cols-2 mx-32 my-8">
-      <div class="journey text-4xl font-sans">
+    <div class="learning grid md:grid-cols-2 mx-32 my-8">
+      <div class="journey text-4xl font-sans mb-8">
         Everything you need to start your .NET learning journey
       </div>
       <div class="library text-lg">
         .NET offers a library of learning resources. Access videos, tutorials,
         code samples, and content from Microsoft Learn to help you build better.
         <div>
-          <button class="bg-blue-800 text-white p-3 mt-2 rounded-lg">
+          <button class="bg-blue-800 text-white p-3 mt-4 rounded-lg">
             Explore Learning Portal
           </button>
         </div>
       </div>
     </div>
-    <div class="beginners grid grid-cols-3 m-24">
+    <div class="beginners grid md:grid-cols-3 m-24">
       <div class="p-3">
         <h1 class="font-bold mb-4">.NET for Beginners videos</h1>
-        <p>
+        <p class="text-justify">
           Getting started with .NET development? We have you covered with our
           .NET for Beginners videos. Explore videos on web, mobile, desktop, C#,
           machine learning, containers/Docker, data access, and more.
@@ -160,7 +170,7 @@
       </div>
       <div class="p-3">
         <h1 class="font-bold mb-4">Microsoft Learn</h1>
-        <p>
+        <p class="text-justify">
           Discover your path to build apps with .NET on Microsoft Learn. Whether
           you're just starting or an experienced professional, Microsoft Learn's
           hands-on approach helps you arrive at your goals faster, with more
@@ -170,7 +180,7 @@
       </div>
       <div class="p-3">
         <h1 class="font-bold mb-4">LinkedIn Learning</h1>
-        <p>
+        <p class="text-justify">
           Get an introduction to the programming skills needed for a career as a
           .NET software developer. Experience .NET learning courses that provide
           a broad perspective on core technologies leveraging .NET.
@@ -186,10 +196,10 @@
       </p>
     </div>
 
-    <div class="grid grid-cols-4 m-16">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 m-16">
       <div class="nuget p-3">
         <h1 class="font-sans text-lg font-bold">NuGet</h1>
-        <p>
+        <p class="text-justify">
           Build with the most secure package ecosystem trusted by millions of
           developers. With over 390,000 unique packages to date and 50,000 more
           each year.
@@ -200,7 +210,7 @@
       </div>
       <div class="vs p-3">
         <h1 class="font-sans text-lg font-bold">Visual Studio</h1>
-        <p>
+        <p class="text-justify">
           Develop with the best IDE for .NET on Windows. Packed with an array of
           tools and features to elevate and enhance every stage of software
           development.
@@ -211,7 +221,7 @@
       </div>
       <div class="vscode p-3">
         <h1 class="font-sans text-lg font-bold">Visual Studio Code</h1>
-        <p>
+        <p class="text-justify">
           Develop on Linux, macOS, or Windows to build cross-platform websites
           and services. Install the C# Dev Kit to get the best experience.
         </p>
@@ -221,7 +231,7 @@
       </div>
       <div class="azure p-3">
         <h1 class="font-sans text-lg font-bold">Azure</h1>
-        <p>
+        <p class="text-justify">
           Create modern, scalable cloud apps on a cloud platform designed for
           .NET.
         </p>
@@ -230,9 +240,9 @@
         </h2>
       </div>
     </div>
-    <div class="community grid grid-cols-2 m-16">
+    <div class="community grid md:grid-cols-2 m-16">
       <div class="font-bold mx-3">
-        <h1 class="text-3xl">Be a part of the global</h1>
+        <h1 class="text-3xl mb-4">Be a part of the global</h1>
         <h1 class="text-3xl py-2 text-sky-600">.NET developer community</h1>
       </div>
       <div class="font-bold mx-8">
@@ -245,32 +255,36 @@
         </div>
       </div>
     </div>
-    <div class="numbers grid grid-cols-3 text-center mb-8">
+    <div class="numbers grid md:grid-cols-3 text-center mb-8">
       <div class="font-extrabold text-6xl text-violet-700">
         474K+
-        <h1 class="font-normal text-lg text-black">stars on GitHub</h1>
+        <h1 class="font-normal text-lg text-black underline py-2">
+          stars on GitHub
+        </h1>
       </div>
       <div class="font-extrabold text-6xl text-violet-700">
         330K+
-        <h1 class="font-normal text-lg text-black">followers on X</h1>
+        <h1 class="font-normal text-lg text-black underline py-2">
+          followers on X
+        </h1>
       </div>
       <div class="font-extrabold text-6xl text-violet-700">
         329K+
-        <h1 class="font-normal text-lg text-black">members on Meetup</h1>
+        <h1 class="font-normal text-lg text-black underline py-2">
+          members on Meetup
+        </h1>
       </div>
     </div>
-<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-    <div class="uses.net grid grid-cols-2 m-16 ">
-      <div class= "grid grid-cols-4 mt-8 px-8">
-        <img class="p-4" src="assets/ge-aviation.png" alt="">
-        <img class="p-4" src="assets/microsoft-teams-logo.png" alt="">
-        <img class="p-4" src="assets/bing-logo.png" alt="">
-        <img class="p-4" src="assets/nbc-sports-next-light.png" alt="">
-
-
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <div class="uses.net grid md:grid-cols-2 m-16">
+      <div class="grid grid-cols-4 mt-8 px-8">
+        <img class="p-4" src="assets/ge-aviation.png" alt="" />
+        <img class="p-4" src="assets/microsoft-teams-logo.png" alt="" />
+        <img class="p-4" src="assets/bing-logo.png" alt="" />
+        <img class="p-4" src="assets/nbc-sports-next-light.png" alt="" />
       </div>
-      <div class="px-8">
-        <h1 class="font-bold text-3xl">Who uses .NET?</h1>
+      <div class="px-8 mt-8">
+        <h1 class="font-bold text-3xl mb-4">Who uses .NET?</h1>
         <p class="text-xl">
           The world's top organizations are powered by .NET and trust Microsoft
           to make .NET the best choice in the industry for their mission
@@ -278,7 +292,7 @@
           incredible software for millions of companies around the world, in
           every industry.
         </p>
-        <h2>Read customer stories </h2>
+        <h2>Read customer stories</h2>
       </div>
     </div>
   </body>
